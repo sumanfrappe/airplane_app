@@ -1,0 +1,130 @@
+2025-01-25 21:24:59,804 DEBUG cd frappe-bench && python3.11 -m venv env
+2025-01-25 21:25:02,193 DEBUG cd frappe-bench && /home/aeroplane/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-01-25 21:25:03,772 DEBUG cd frappe-bench && /home/aeroplane/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-01-25 21:25:21,186 LOG Getting frappe
+2025-01-25 21:25:21,186 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-01-25 21:25:41,336 LOG Installing frappe
+2025-01-25 21:25:41,336 DEBUG cd /home/aeroplane/frappe-bench && /home/aeroplane/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aeroplane/frappe-bench/apps/frappe 
+2025-01-25 21:26:28,464 DEBUG cd /home/aeroplane/frappe-bench/apps/frappe && yarn install --check-files
+2025-01-25 21:26:55,959 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-01-25 21:26:55,966 DEBUG cd frappe-bench && bench build
+2025-01-25 21:26:56,214 INFO /usr/local/bin/bench build
+2025-01-25 21:45:16,708 INFO /usr/local/bin/bench new-site dcode.com
+2025-01-25 21:46:05,162 INFO /usr/local/bin/bench --site dcode.com add-to-hosts
+2025-01-25 21:48:21,574 INFO /usr/local/bin/bench new-app airplane_mode
+2025-01-25 21:48:21,588 LOG creating new app airplane_mode
+2025-01-25 21:49:45,263 LOG Installing airplane_mode
+2025-01-25 21:49:45,265 DEBUG cd /home/aeroplane/frappe-bench && /home/aeroplane/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aeroplane/frappe-bench/apps/airplane_mode 
+2025-01-25 21:49:47,732 DEBUG bench build --app airplane_mode
+2025-01-25 21:49:47,814 INFO /usr/local/bin/bench build --app airplane_mode
+2025-01-25 21:49:49,784 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-01-25 21:50:58,406 INFO /usr/local/bin/bench install-app airplane_mode
+2025-01-25 21:51:14,997 INFO /usr/local/bin/bench install-app airplane_mode
+2025-01-25 21:52:03,321 INFO /usr/local/bin/bench --site dcode.com install-app airplane_mode
+2025-01-25 21:55:40,518 INFO /usr/local/bin/bench --site dcode.com set-config developer_mode 1
+2025-01-25 21:56:19,608 INFO /usr/local/bin/bench restart
+2025-01-25 21:56:19,626 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-01-25 21:56:31,659 INFO /usr/local/bin/bench start
+2025-01-25 21:56:31,916 INFO /usr/local/bin/bench serve --port 8000
+2025-01-25 21:56:31,922 INFO /usr/local/bin/bench watch
+2025-01-25 21:56:31,922 INFO /usr/local/bin/bench schedule
+2025-01-25 21:56:31,926 INFO /usr/local/bin/bench worker
+2025-01-25 22:27:22,499 INFO /usr/local/bin/bench start
+2025-01-25 22:27:22,690 INFO /usr/local/bin/bench worker
+2025-01-25 22:27:22,691 INFO /usr/local/bin/bench watch
+2025-01-25 22:27:22,691 INFO /usr/local/bin/bench schedule
+2025-01-25 22:27:22,706 INFO /usr/local/bin/bench serve --port 8000
+2025-01-27 22:16:04,056 INFO /usr/local/bin/bench clear-cache
+2025-01-27 22:16:15,278 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2025-01-27 22:16:37,575 INFO /usr/local/bin/bench build
+2025-01-27 22:18:05,876 INFO /usr/local/bin/bench restart
+2025-01-27 22:18:05,894 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-01-27 22:18:18,723 INFO /usr/local/bin/bench start
+2025-01-27 22:18:18,939 INFO /usr/local/bin/bench watch
+2025-01-27 22:18:18,944 INFO /usr/local/bin/bench serve --port 8000
+2025-01-27 22:18:18,950 INFO /usr/local/bin/bench worker
+2025-01-27 22:18:18,953 INFO /usr/local/bin/bench schedule
+2025-01-27 22:28:49,440 INFO /usr/local/bin/bench start
+2025-01-27 22:28:50,249 INFO /usr/local/bin/bench watch
+2025-01-27 22:28:50,249 INFO /usr/local/bin/bench schedule
+2025-01-27 22:28:50,249 INFO /usr/local/bin/bench worker
+2025-01-27 22:28:50,249 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 01:35:05,940 INFO /usr/local/bin/bench start
+2025-01-28 01:35:06,139 INFO /usr/local/bin/bench worker
+2025-01-28 01:35:06,149 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 01:35:06,153 INFO /usr/local/bin/bench watch
+2025-01-28 01:35:06,156 INFO /usr/local/bin/bench schedule
+2025-01-28 02:51:11,261 INFO /usr/local/bin/bench migrate
+2025-01-28 02:51:22,948 INFO /usr/local/bin/bench --site decode.com migrate
+2025-01-28 02:51:45,074 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 02:51:56,965 INFO /usr/local/bin/bench start
+2025-01-28 02:51:57,594 INFO /usr/local/bin/bench schedule
+2025-01-28 02:51:57,599 INFO /usr/local/bin/bench worker
+2025-01-28 02:51:57,601 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 02:51:57,602 INFO /usr/local/bin/bench watch
+2025-01-28 11:18:01,146 INFO /usr/local/bin/bench migrate
+2025-01-28 11:18:13,415 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 11:18:59,844 INFO /usr/local/bin/bench start
+2025-01-28 11:19:00,990 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 11:19:00,994 INFO /usr/local/bin/bench schedule
+2025-01-28 11:19:01,045 INFO /usr/local/bin/bench watch
+2025-01-28 11:19:01,097 INFO /usr/local/bin/bench worker
+2025-01-28 11:19:07,928 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 11:19:38,608 INFO /usr/local/bin/bench start
+2025-01-28 11:19:38,825 INFO /usr/local/bin/bench watch
+2025-01-28 11:19:38,826 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 11:19:38,830 INFO /usr/local/bin/bench worker
+2025-01-28 11:19:38,839 INFO /usr/local/bin/bench schedule
+2025-01-28 11:19:54,714 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 11:20:16,246 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 11:21:44,885 INFO /usr/local/bin/bench --site dcode.com list-apps
+2025-01-28 11:22:50,708 INFO /usr/local/bin/bench --site dcode.com install-app airplane_mode
+2025-01-28 11:23:01,940 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 11:26:02,747 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 11:27:50,712 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 11:38:49,256 INFO /usr/local/bin/bench execute frappe.utils.commands.add_custom_page --args airplane_mode, show_me, Show Me
+2025-01-28 11:39:05,050 INFO /usr/local/bin/bench execute --site dcode.com frappe.utils.commands.add_custom_page --args airplane_mode, show_me, Show Me
+2025-01-28 11:39:42,503 INFO /usr/local/bin/bench execute frappe.utils.commands.add_custom_page --args airplane_mode, show_me, Show Me --site dcode.com
+2025-01-28 11:40:34,647 INFO /usr/local/bin/bench execute frappe.utils.commands.add_custom_page --args airplane_mode, show_me, Show Me --site dcode.com
+2025-01-28 12:23:56,860 INFO /usr/local/bin/bench --site dcode.com execute frappe.utils.commands.add_custom_page --args airplane_mode, show_me, Show Me
+2025-01-28 12:26:17,906 INFO /usr/local/bin/bench --site dcode.com execute frappe.utils.commands.add_custom_page --args ['airplane_mode', 'show_me', 'Show Me']
+2025-01-28 12:27:44,459 INFO /usr/local/bin/bench --site dcode.com add-page show_me
+2025-01-28 13:10:29,766 INFO /usr/local/bin/bench migrate
+2025-01-28 13:10:47,800 INFO /usr/local/bin/bench --site dcode.commigrate
+2025-01-28 13:10:56,474 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 13:16:13,442 INFO /usr/local/bin/bench --site dcode.com migrate
+2025-01-28 13:50:12,712 INFO /usr/local/bin/bench start
+2025-01-28 13:52:30,817 INFO /usr/local/bin/bench start
+2025-01-28 13:52:31,001 INFO /usr/local/bin/bench worker
+2025-01-28 13:52:31,001 INFO /usr/local/bin/bench schedule
+2025-01-28 13:52:31,001 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 13:52:31,001 INFO /usr/local/bin/bench watch
+2025-01-28 14:53:38,181 INFO /usr/local/bin/bench restart
+2025-01-28 14:53:38,199 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-01-28 14:53:46,678 INFO /usr/local/bin/bench start
+2025-01-28 14:53:46,877 INFO /usr/local/bin/bench worker
+2025-01-28 14:53:46,881 INFO /usr/local/bin/bench schedule
+2025-01-28 14:53:46,887 INFO /usr/local/bin/bench watch
+2025-01-28 14:53:46,899 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 14:58:31,784 INFO /usr/local/bin/bench set-config -g server_script_enabled 1
+2025-01-28 19:08:58,513 INFO /usr/local/bin/bench start
+2025-01-28 19:08:58,804 INFO /usr/local/bin/bench worker
+2025-01-28 19:08:58,804 INFO /usr/local/bin/bench watch
+2025-01-28 19:08:58,806 INFO /usr/local/bin/bench schedule
+2025-01-28 19:08:58,843 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 21:09:20,909 INFO /usr/local/bin/bench start
+2025-01-28 21:09:21,098 INFO /usr/local/bin/bench schedule
+2025-01-28 21:09:21,099 INFO /usr/local/bin/bench watch
+2025-01-28 21:09:21,099 INFO /usr/local/bin/bench worker
+2025-01-28 21:09:21,111 INFO /usr/local/bin/bench serve --port 8000
+2025-01-28 21:18:05,053 INFO /usr/local/bin/bench clear-cache
+2025-01-28 21:18:16,282 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2025-01-28 21:18:31,079 INFO /usr/local/bin/bench clear-website-cache
+2025-01-28 21:18:40,025 INFO /usr/local/bin/bench --site decode.com clear-website-cache
+2025-01-28 21:18:46,099 INFO /usr/local/bin/bench --site dcode.com clear-website-cache
+2025-01-28 21:25:02,774 INFO /usr/local/bin/bench console
+2025-01-28 21:25:12,594 INFO /usr/local/bin/bench --site dcode.com console
+2025-01-28 22:32:58,829 INFO /usr/local/bin/bench clear-cache
+2025-01-28 22:33:08,969 INFO /usr/local/bin/bench --site dcode.com clear-cache
+2025-01-28 22:33:25,784 INFO /usr/local/bin/bench --site dcode.com clear-website-cache
+2025-01-28 22:39:14,214 INFO /usr/local/bin/bench --site dcode.com list-app-routes

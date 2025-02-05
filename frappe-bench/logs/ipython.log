@@ -1,0 +1,5 @@
+2025-01-28 21:25:45,218 INFO ipython === bench console session ===
+2025-01-28 21:25:45,218 INFO ipython web_pages = frappe.get_all("Web Page", fields=["name", "route", "title", "published"])
+for page in web_pages:
+    print(page)
+2025-01-28 21:25:45,218 INFO ipython === session end ===
